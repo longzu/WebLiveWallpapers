@@ -11,6 +11,38 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="html\css\style.css" />
+    <None Remove="html\img\material\cpu.png" />
+    <None Remove="html\img\material\home.png" />
+    <None Remove="html\img\material\ram.png" />
+    <None Remove="html\img\material\关机.png" />
+    <None Remove="html\img\material\回收站.png" />
+    <None Remove="html\img\material\框线.png" />
+    <None Remove="html\img\material\框线1.png" />
+    <None Remove="html\img\material\框线2.png" />
+    <None Remove="html\img\material\浏览器.png" />
+    <None Remove="html\img\material\相册.jpg" />
+    <None Remove="html\img\material\线条.png" />
+    <None Remove="html\img\material\重启.png" />
+    <None Remove="html\img\material\锁屏.png" />
+    <None Remove="html\img\qq.png" />
+    <None Remove="html\img\steam.png" />
+    <None Remove="html\img\回收站ico.png" />
+    <None Remove="html\img\微信.png" />
+    <None Remove="html\img\微信ico.png" />
+    <None Remove="html\img\浏览器ico.png" />
+    <None Remove="html\img\电脑.png" />
+    <None Remove="html\img\电脑ico.png" />
+    <None Remove="html\img\网易云.png" />
+    <None Remove="html\img\计算器.png" />
+    <None Remove="html\img\计算器ico.png" />
+    <None Remove="html\img\音乐ico.png" />
+    <None Remove="html\index.html" />
+    <None Remove="html\main.js" />
+    <None Remove="html\壁纸.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <COMReference Include="Shell32">
       <VersionMinor>0</VersionMinor>
       <VersionMajor>1</VersionMajor>
@@ -32,6 +64,93 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="html\css\style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\cpu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\home.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\ram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\关机.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\回收站.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\框线.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\框线1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\框线2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\浏览器.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\相册.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\线条.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\重启.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\material\锁屏.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\qq.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\steam.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\回收站ico.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\微信.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\微信ico.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\浏览器ico.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\电脑.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\电脑ico.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\网易云.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\计算器.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\计算器ico.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\img\音乐ico.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\main.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html\壁纸.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="MainP.ico" />
   </ItemGroup>
 

@@ -1,0 +1,607 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /*壁纸路径*/
+    background-image: url(../壁纸.jpg);
+    /*去除内边距*/
+    padding: 0;
+    /*去除边框*/
+    border: 0;
+    /*去除外边距*/
+    margin: 0;
+    /*Chrome/Safari/Opera禁止文字选中*/
+    -webkit-user-select: none;
+    /*Internet Explorer/Edge禁止文字选中*/
+    -ms-user-select: none;
+    /*去除横轴滚动条*/
+    overflow-x: hidden;
+    /*去除竖轴滚动条*/
+    overflow-y: hidden;
+    /*设置背景图片填满*/
+    background-size: 100% 100%;
+    /*设置背景图片拉伸，而不是重复占满空间*/
+    background-repeat: no-repeat;
+    /*设置背景置于最底部*/
+    z-index: -99;
+}
+
+/* -整块- */
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -5.075rem;
+    margin-top: -2.5rem;
+}
+
+/* -左侧dock栏块- */
+#dock {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1rem;
+    height: 4rem;
+    background-color: black;
+    border-radius: 0.75rem 0.75rem 0.75rem 0rem;
+}
+
+#dockImg1 {
+    position: absolute;
+    width: 0.35rem;
+    height: 0.35rem;
+    top: 0.3rem;
+    left: 0.3rem;
+}
+
+#dockImg2 {
+    position: absolute;
+    width: 0.35rem;
+    height: 0.35rem;
+    top: 0.9rem;
+    left: 0.3rem;
+}
+
+#dockImg3 {
+    position: absolute;
+    width: 0.35rem;
+    height: 0.35rem;
+    top: 1.5rem;
+    left: 0.3rem;
+}
+
+#dockImg4 {
+    position: absolute;
+    width: 0.35rem;
+    height: 0.35rem;
+    top: 2.1rem;
+    left: 0.3rem;
+}
+
+#dockImg5 {
+    position: absolute;
+    width: 0.35rem;
+    height: 0.35rem;
+    top: 2.7rem;
+    left: 0.3rem;
+}
+
+#dockImg6 {
+    position: absolute;
+    width: 0.3rem;
+    height: 0.3rem;
+    top: 3.3rem;
+    left: 0.3rem;
+}
+
+/* -隐藏式dock页- */
+#dockPage {
+    position: absolute;
+    /* 颜色 */
+    background-color: rgba(0, 0, 0, 1);
+    /* 距离左侧位置 */
+    left: 3%;
+    /* 距离顶部位置 */
+    top: 20%;
+    /* 宽高 */
+    width: 7.6rem;
+    height: 4rem;
+    /* 圆角 */
+    border-radius: 10px;
+    /* 边框阴影 */
+    box-shadow: 5px 5px 50px #8888;
+    z-index: 1;
+    visibility: hidden;
+}
+
+/* -隐藏式dock页内布局装载,一般不动- */
+#dockPageImg {
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* -隐藏式dock页内图标样式- */
+.dockPageImgs {
+    /* 宽高 */
+    width: 64px;
+    height: 64px;
+    /* 外边距 */
+    margin: 15px;
+    /* 圆角 */
+    border-radius: 0%;
+}
+
+/* -时间块- */
+#time {
+    position: absolute;
+    top: 0%;
+    left: 1.1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: rgb(240, 50, 50);
+}
+
+/* -时间块内分钟- */
+#timeMinute {
+    position: absolute;
+    top: 0rem;
+    left: 0.95rem;
+    font-size: 0.15rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* -时间内文本- */
+#timeText {
+    position: absolute;
+    top: 0.43rem;
+    left: 0.15rem;
+    font-size: 0.1rem;
+    color: rgba(195, 15, 35, 1);
+}
+
+/* -时间块内小时- */
+#timeHours {
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    font-size: 0.5rem;
+    color: rgba(195, 15, 35, 1);
+    font-weight: bold;
+}
+
+/* -时间块内竖条装饰- */
+#timeVertical {
+    position: absolute;
+    width: 50px;
+    height: 0.55rem;
+    top: 0.6rem;
+    left: 0.55rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+/* -浏览器块- */
+#browser {
+    position: absolute;
+    top: 1.35rem;
+    left: 1.1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: black;
+}
+
+/* -回收站块- */
+#bin {
+    position: absolute;
+    top: 2.7rem;
+    left: 1.1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: black;
+}
+
+/* -回收站块内图标- */
+#binImg {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    top: 0.27rem;
+    left: 0.33rem;
+    opacity: 0.8;
+}
+
+/* -回收站块内横条装饰- */
+#binVertical {
+    position: absolute;
+    width: 0.6rem;
+    height: 0.1rem;
+    top: 0.85rem;
+    left: 0.33rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+/* -回收站块内文本- */
+#binText {
+    position: absolute;
+    color: brown;
+    top: 0.9rem;
+    left: 0.33rem;
+    font-size: 0.11rem;
+}
+
+/* -日期块- */
+#date {
+    position: absolute;
+    top: 0rem;
+    left: 2.45rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    /*圆角*/
+    border-radius: 0rem 0.75rem 0rem 0rem;
+    overflow: hidden;
+}
+
+/* -日期块内背景文字填充- */
+#dateTextPadding {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 0rem;
+    left: 0rem;
+    color: dimgray;
+    font-size: 0.3rem;
+    font-weight: bolder;
+    opacity: 0.2;
+}
+
+/* -日期块内装饰- */
+#dateLine {
+    position: absolute;
+    top: 0.15rem;
+    left: 0.15rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    border-left: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+/* -日期块内星期- */
+#dataWeek {
+    position: absolute;
+    /*#f03232*/
+    color: rgba(240, 50, 50, 0.8);
+    left: 0.35rem;
+    top: 0.8rem;
+    font-size: 0.3rem;
+    font-weight: bolder;
+}
+
+
+/* -日期块内月份- */
+#dataData {
+    position: absolute;
+    transform: rotate(-90deg);
+    color: white;
+    font-size: 0.1rem;
+    left: 2.2rem;
+    top: 0rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* -日期块内竖条装饰- */
+#dataVertical {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.55rem;
+    top: 1.8rem;
+    left: 2.2rem;
+    border-right: 1px solid rgba(240, 50, 50, 0.5);
+}
+
+/* -cpu/ram块- */
+#cpuRam {
+    position: absolute;
+    top: 2.7rem;
+    left: 2.45rem;
+    width: 2.5rem;
+    height: 1.25rem;
+    background-color: black;
+    background-image: url(../img/material/线条.png);
+    border-radius: 0rem 0rem 0.75rem 0rem;
+}
+
+/* -cpu/ram块内cpu图标- */
+#cpuImg {
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    width: 0.4rem;
+    height: 0.4rem;
+
+}
+
+/* -cpu/ram块内ram图标- */
+#ramImg {
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    top: 0.7rem;
+    left: 0.2rem;
+}
+
+/* -cpu/ram块内cpu文本- */
+#cpu {
+    position: absolute;
+    font-size: 0.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    top: 0rem;
+    left: 1rem;
+}
+
+/* -cpu/ram块内ram文本- */
+#ram {
+    position: absolute;
+    font-size: 0.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    top: 0.5rem;
+    left: 1rem;
+}
+
+/* -cpu/ram块内横条装饰- */
+#cpuRamVertical {
+    position: absolute;
+    width: 0.7rem;
+    height: 0.1rem;
+    border-bottom: 1px solid rgba(240, 50, 50, 0.5);
+    top: 0.58rem;
+    left: 0.9rem;
+}
+
+/* -相册块- */
+#photo {
+    position: absolute;
+    top: 0rem;
+    left: 5.05rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgb(240, 50, 50);
+    /*背景图片缩放方式*/
+    background-size: cover;
+    /*背景图片横坐标向左移动*/
+    background-position: -0.75rem 0;
+    /*圆角*/
+    border-radius: 0.75rem 0rem 0.75rem 0rem;
+    /*图片路径*/
+    background-image: url(../img/material/相册.jpg);
+}
+
+/* -相册内框线- */
+#photoPane {
+    position: absolute;
+    top: 0.15rem;
+    left: 0.15rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 0.75rem 0rem 0.75rem 0rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-image: url(../img/material/框线.png);
+    /* 设置背景图片填满 */
+    background-size: 100% 100%;
+    /* 设置背景图片拉伸，而不是重复占满空间 */
+    background-repeat: no-repeat;
+}
+
+/* -个人主页块- */
+#homePage {
+    position: absolute;
+    top: 2.7rem;
+    left: 5.05rem;
+    width: 2.5rem;
+    height: 1.25rem;
+    background-color: black;
+    border-radius: 0rem 0.75rem 0rem 0.75rem;
+}
+
+/* -个人主页头像- */
+#homeImg {
+    position: relative;
+    background-image: url(../img/material/home.png);
+    top: 0.2rem;
+    left: 0.2rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    /* 设置背景图片填满 */
+    background-size: 100% 100%;
+    /* 设置背景图片拉伸，而不是重复占满空间 */
+    background-repeat: no-repeat;
+}
+
+/* -个人主页名字- */
+#homeName {
+    position: absolute;
+    top: 0.2rem;
+    left: 1.1rem;
+    font-size: 0.15rem;
+    color: white;
+}
+
+/* -个人主页框线- */
+#homeBut {
+    position: absolute;
+    top: 0.55rem;
+    left: 1.1rem;
+    width: 1.2rem;
+    height: 0.55rem;
+    border-right: 1px solid rgba(240, 50, 50, 0.5);
+}
+
+/* -个人主页内锁屏按钮- */
+#homeLock {
+    position: absolute;
+    top: 0.1rem;
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+/* -个人主页内重启按钮- */
+#homeReboot {
+    position: absolute;
+    top: 0.1rem;
+    left: 0.36rem;
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+/* -个人主页内关机按钮- */
+#homeShutdown {
+    position: absolute;
+    top: 0.1rem;
+    left: 0.72rem;
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+/* -右上角文本块- */
+#theText {
+    position: absolute;
+    top: 0rem;
+    left: 7.65rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    border-radius: 0rem 0.75rem 0rem 0.75rem;
+    color: white;
+}
+
+/* -右上角文本块内框线- */
+#theTextPane {
+    position: absolute;
+    top: 0.15rem;
+    left: 0.15rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 0rem 0.75rem 0rem 0.75rem;
+    background-image: url(../img/material/框线.png);
+    /* 设置背景图片填满 */
+    background-size: 100% 100%;
+    /* 设置背景图片拉伸，而不是重复占满空间 */
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+/* -右上角文本块内装饰- */
+#theTextAngle1 {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.4rem;
+    width: 0.16rem;
+    height: 0.5rem;
+    background-color: red;
+    background: -webkit-linear-gradient(145deg,
+            rgba(240, 50, 50, 0) 10px,
+            rgba(240, 50, 50, 0.9) 0)top left;
+}
+
+/* -右上角文本块内装饰- */
+#theTextAngle2 {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.6rem;
+    width: 0.16rem;
+    height: 0.5rem;
+    background-color: red;
+    background: -webkit-linear-gradient(145deg,
+            rgba(240, 50, 50, 0) 10px,
+            rgba(240, 50, 50, 0.9) 0)top left;
+}
+
+/* -右上角文本块内标题- */
+#theTextTitle {
+    position: relative;
+    left: 0.4rem;
+    font-size: 0.3rem;
+}
+
+/* -右上角文本块内文本- */
+#theTextText {
+    position: relative;
+    left: 0.4rem;
+    font-size: 0.16rem;
+}
+
+/* -右下角文本块- */
+#dockMain {
+    position: absolute;
+    top: 2.7rem;
+    left: 7.65rem;
+    width: 2.5rem;
+    height: 1.25rem;
+    background-color: black;
+    border-radius: 0.75rem 0rem 0rem 0rem;
+}
+
+/* -右下角文本块内文本装饰- */
+#common {
+    position: absolute;
+    top: 0.35rem;
+    left: 0.2rem;
+    color: white;
+    font-size: 0.15rem;
+}
+
+/* -右下角文本块内文本装饰- */
+#folder {
+    position: absolute;
+    top: 0.35rem;
+    left: 0.2rem;
+    color: rgba(240, 50, 50, 0.8);
+    font-size: 0.35rem;
+    font-weight: bold;
+}
+
+/* -右下角文本块内心脏装饰- */
+#heart {
+    position: absolute;
+    top: 0.05rem;
+    left: 2.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.25rem;
+}
+
+/* -右下角文本块内竖条装饰- */
+#vertical {
+    position: absolute;
+    top: 0.55rem;
+    left: 2.32rem;
+    color: rgba(255, 255, 255, 1);
+    height: 0.55rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+/* -鼠标移入动画播放快慢- */
+.animation:hover {
+    animation: move .3s linear forwards;
+}
+
+.dockPageImgs:hover {
+    animation: move .3s linear forwards;
+}
+
+/* -鼠标移入放大动画效果- */
+@keyframes move {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+        /* 放大1.1倍 */
+    }
+}

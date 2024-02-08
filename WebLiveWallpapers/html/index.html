@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scarlet-Wallpaper Web</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+    <div id="main">
+
+        <!-- 左侧dock栏 -->
+        <div id="dock">
+            <img id="dockImg1" class="animation" src="./img/电脑.png" title="我的电脑" onclick="WC.W_OpenFileMgr()"></img>
+
+            <img id="dockImg2" class="animation" src="./img/计算器.png" title="计算器" onclick="WC.W_OpenSysCalc()"></img>
+
+            <img id="dockImg3" class="animation" src="./img/网易云.png" title="音乐"
+                onclick="WC.W_OpenPath('D:\\你的音乐播放软件所在路径\\XXXX.exe')"></img>
+
+            <img id="dockImg4" class="animation" src="./img/微信.png" title="微信"
+                onclick="WC.W_OpenPath('D:\\你的微信所在路径\\WeChat.exe')"></img>
+
+            <img id="dockImg5" class="animation" src="./img/qq.png" title="QQ"
+                onclick="WC.W_OpenPath('D:\\你的QQ所在路径\\qq.exe')"></img>
+
+            <img id="dockImg6" class="animation" src="./img/steam.png" title="steam"
+                onclick="WC.W_OpenPath('D:\\你的steam所在路径\\steam.exe')"></img>
+            <!-- 按照你的本地应用修改程序路径 -->
+        </div>
+
+        <!-- 隐藏式dock页 -->
+        <div id="dockPage">
+            <div id="dockPageImg">
+                <img class="dockPageImgs" src="./img/电脑ico.png" title="我的电脑" onclick="WC.W_OpenFileMgr()"></img>
+
+                <img class="dockPageImgs" src="./img/回收站ico.png" title="回收站" onclick="WC.W_OpenRecyclebin()"><img>
+
+                <img class="dockPageImgs" src="./img/计算器ico.png" title="计算器" onclick="WC.W_OpenSysCalc()"></img>
+
+                <img class="dockPageImgs" src="./img/浏览器ico.png" title="浏览器" onclick="WC.W_OpenSysBrowser()"></img>
+
+                <img class="dockPageImgs" src="./img/音乐ico.png" title="音乐"
+                    onclick="WC.W_OpenPath('D:\\你的音乐播放软件所在路径\\XXXX.exe')"></img>
+
+                <img class="dockPageImgs" src="img/微信ico.png" title="微信"
+                    onclick="WC.W_OpenPath('D:\\你的微信所在路径\\WeChat.exe')"></img>
+
+                <img class="dockPageImgs"></img>
+
+                <img class="dockPageImgs"></img>
+
+                <img class="dockPageImgs"></img>
+
+                <img class="dockPageImgs"></img>
+                <!-- 按照上方格式自行添加/删除dock图标,按照你的本地应用修改程序路径 -->
+            </div>
+        </div>
+
+        <!-- 时间块 -->
+        <div id="time">
+            <p id="timeMinute">27</p>
+            <p id="timeText">H O U R S</p>
+            <p id="timeHours">09</p>
+            <div id="timeVertical"></div>
+        </div>
+
+        <!-- 浏览器块 -->
+        <img id="browser" class="animation" title="打开浏览器" src="./img/material/浏览器.png"
+            onclick="WC.W_OpenSysBrowser()"></img>
+
+        <!-- 回收站块 -->
+        <div id="bin" class="animation" title="清空回收站" onclick="WC.W_RecycleSysBin()"></img>>
+            <img id="binImg" src="./img/material/回收站.png"></img>
+            <div id="binVertical"></div>
+            <p id="binText">清空回收站</p>
+        </div>
+
+        <!-- 星期和日期块 -->
+        <div id="date">
+            <div id="dateTextPadding">
+                Akame Ga Kill! Akame Ga Kill! Akame Ga Kill! Akame Ga Kill! Akame Ga Kill! Akame Ga
+                Kill! Akame Ga Kill! Akame Ga Kill! Akame Ga Kill! Akame Ga Kill! Akame Ga Kill! Akame Ga Kill!
+            </div>
+            <div id="dateLine"></div>
+            <p id="dataWeek">SAYURDAY</p>
+            <div id="dataData">A U G . 13</div>
+            <div id="dataVertical"></div>
+        </div>
+
+        <!-- cpu/ram块 -->
+        <div id="cpuRam">
+            <div id="cpuRamVertical"></div>
+            <img id="cpuImg" src="./img/material/cpu.png"></img>
+            <img id="ramImg" src="./img/material/ram.png"></img>
+            <p id="cpu">00 %</p>
+            <p id="ram">00 %</p>
+        </div>
+
+        <!-- 中间相册 -->
+        <div id="photo">
+            <div id="photoPane"></div>
+        </div>
+
+        <!-- 中间个人主页 -->
+        <div id="homePage">
+            <div id="homeImg"></div>
+            <p id="homeName">Scarlet</p>
+            <div id="homeBut">
+                <img id="homeLock" class="animation" src="./img/material/锁屏.png" title="锁屏"
+                    onclick="WC.W_SysLock()"></img>
+                <img id="homeReboot" class="animation" src="./img/material/重启.png" title="重启"
+                    onclick="WC.W_SysReboot()"></img>
+                <img id="homeShutdown" class="animation" src="./img/material/关机.png" title="关机"
+                    onclick="WC.W_SysShutdown()"></img>
+            </div>
+        </div>
+
+        <!-- 右上角文本块 -->
+        <div id="theText">
+            <div id="theTextPane"></div>
+            <div id="theTextAngle1"></div>
+            <div id="theTextAngle2"></div>
+            <p id="theTextTitle">F I G H T</p>
+            <p id="theTextText">攀登顶峰 , 这种奋斗的本<br>身就足以充实人的心 . 人<br>们必须相信 , 垒山不止就<br>是幸福 .</p>
+        </div>
+
+        <!-- 右下角dock块 -->
+        <div id="dockMain" class="animation" title="常用app" onclick="(showOrHide())">
+            <p id="common">Common</p>
+            <p id="folder">F O L D E R</p>
+            <div id="heart">♥</div>
+            <div id="vertical"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
